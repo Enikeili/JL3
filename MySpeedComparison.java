@@ -18,8 +18,8 @@ public class MySpeedComparison
 		{
 			System.out.println("Time for "+Integer.toString(numbers[i])+" elements (ms):");
 			System.out.println("\t   Add\tGet\tRemove");
-			System.out.println("ArrayList  "+Long.toString(m.timeForAdd(arraylist, numbers[i]))+"\t"+Long.toString(m.timeForGet(arraylist, numbers[i]))+"\t"+Long.toString(m.timeForGet(arraylist, numbers[i])));
-			System.out.println("LinkedList "+Long.toString(m.timeForAdd(linkedlist, numbers[i]))+"\t"+Long.toString(m.timeForGet(linkedlist, numbers[i]))+"\t"+Long.toString(m.timeForGet(linkedlist, numbers[i]))+"\n");
+			System.out.println("ArrayList  "+Long.toString(m.timeForAdd(arraylist, numbers[i]))+"\t"+Long.toString(m.timeForGet(arraylist, numbers[i]))+"\t"+Long.toString(m.timeForRemove(arraylist, numbers[i])));
+			System.out.println("LinkedList "+Long.toString(m.timeForAdd(linkedlist, numbers[i]))+"\t"+Long.toString(m.timeForGet(linkedlist, numbers[i]))+"\t"+Long.toString(m.timeForRemove(linkedlist, numbers[i]))+"\n");
 		}
 
 	}
